@@ -6,5 +6,6 @@
   <div class="card-body">
     <p class="card-text"><%= bookmark.recipe.description %></p>
     <p class="card-text"><strong>Comment:</strong> <%= bookmark.comment %></p>
+    <%= link_to 'Delete', category_bookmark_path(@category, bookmark), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" }, class: "text-white btn btn-danger btn-sm" %>
   </div>
 </div>
