@@ -1,0 +1,10 @@
+<div class="card mb-3" style="width: 18rem;">
+  <div class="card-header">
+    <%= link_to bookmark.recipe.name, class: "card-title" %>
+  </div>
+  <img src="<%= bookmark.recipe.image_url %>" class="card-img-top" alt="<%= bookmark.recipe.name %>" style="height: 200px;">
+  <div class="card-body">
+    <p class="card-text"><%= bookmark.recipe.description %></p>
+    <p class="card-text"><strong>Comment:</strong> <%= bookmark.comment %></p>
+  </div>
+</div>

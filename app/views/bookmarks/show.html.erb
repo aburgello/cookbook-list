@@ -1,0 +1,13 @@
+<div class="card">
+  <div class="card-header">
+    <h2><%= @category.name %></h2>
+  </div>
+  <div class="card-body">
+    <ul>
+      <%= render partial: 'bookmarks/bookmark', collection: @category.bookmarks %>
+    </ul>
+  </div>
+  <div class="card-footer">
+    <%= link_to 'New Bookmark', new_category_bookmark_path(@category), class: "btn btn-primary" %>
+  </div>
+</div>

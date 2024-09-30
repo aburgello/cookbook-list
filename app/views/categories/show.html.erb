@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <h2><%= @category.name %></h2>
+      <%= link_to "Back to Categories", categories_path, class: "btn btn-secondary float-right" %> 
+      <%= link_to "Delete Category", category_path(@category), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" }, class: "text-white btn btn-danger" %></div>
+
+    <div class="card-body">
+      <div class="card-container">
+        <%= render partial: 'bookmarks/bookmark', collection: @category.bookmarks %>
+      </div>
+    </div>
+    <div class="card-footer">
+      <%= link_to 'New Bookmark', new_category_bookmark_path(@category), class: "btn btn-primary" %>
+    </div>
+  </div>
+</div>
+
