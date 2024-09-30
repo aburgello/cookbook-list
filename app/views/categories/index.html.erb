@@ -1,11 +1,20 @@
 <div class="container">
-  <h1>Categories</h1>
-  <ul>
+    <div class="banner">
+    <img src="https://www.eatingwell.com/thmb/m5xUzIOmhWSoXZnY-oZcO9SdArQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/article_291139_the-top-10-healthiest-foods-for-kids_-02-4b745e57928c4786a61b47d8ba920058.jpg" alt="Banner Image" class="banner-image">  
+    <h1>Categories</h1>
+  </div>
+  <div class="card-container">
     <% @categories.each do |category| %>
-      <li>
-        <%= link_to category.name, category %>
-      </li>
+      <div class="card mt-3 mb-3">
+        <div class="card-header">
+          <%= link_to category.name, category %>
+        </div>
+        <p>Lorem Ipsum</p>
+      </div>
     <% end %>
-  </ul>
-  <%= link_to 'New Category', new_category_path, class: "btn btn-primary" %>
+  </div>
+  <div class="d-flex justify-content-end">
+    <%= link_to 'New Category', new_category_path, class: "btn btn-primary" %>
+  </div>
 </div>
+
