@@ -5,11 +5,14 @@
   </div>
   <div class="card-container">
     <% @categories.each do |category| %>
-      <div class="card mt-3 mb-3">
-        <div class="card-header">
-          <%= link_to category.name, category %>
+      <div class="card mt-3">
+        <div class="card-header-index">
+        <%= link_to category.name, category %>
+        <img src="https://cdn-icons-png.flaticon.com/512/4901/4901689.png" class="card-img-top" alt="<%= category.name %>">
         </div>
+        <div class="card-body">
         <p>Lorem Ipsum</p>
+        </div>
       </div>
     <% end %>
   </div>
@@ -17,4 +20,3 @@
     <%= link_to 'New Category', new_category_path, class: "btn btn-primary crispy-fill" %>
   </div>
 </div>
-
