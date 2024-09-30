@@ -11,28 +11,46 @@
 @import "components/index";
 @import "pages/index";
 
+body{
+    background-image: url("https://sb.kaleidousercontent.com/67418/1920x1280/166659692b/ella-olsson-opbjwbccaeo-unsplash.jpg");
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-blend-mode:overlay;
+    background-color: rgb(29, 34, 41); 
+}
+
+.container {
+    border-radius: 20px;
+    background-color: white;
+    padding: 25px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 35px;
+    margin-top: 40px;
+    box-shadow: 0px 4px 4px #11111130, 0px 12px 12px #53535315;
+}
+
+a {
+    text-decoration: wavy;
+    font-size: 20px;
+}
+
 .card-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center; 
-    gap: 20px;
-  }
-  
-  .card-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 20px;
-  }
+}
   
-  .card {
+.card {
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 35px;
     display: flex;
-  }
+}
   
- .card-header {
+.card-header {
     background-color: #f2f2f2;
     padding-bottom: 20px;
     display: flex;
@@ -44,8 +62,13 @@
     padding-left: 0px;
     padding-right: 0px;
 }
+
+.card-header:first-child { 
+    border-radius: 8px;
+}
+
 .card-header-index {
-    background-color: #f2f2f2;
+    
     padding-bottom: 20px;
     font-weight: bold;
     color: #333;
@@ -53,45 +76,60 @@
     padding-bottom: 10px;
     padding-left: 0px;
     padding-right: 0px;
+    padding-top: 10px;
 }
 
 .card-header-index img{
     margin-top: 10px;
+    background-color: #f2f2f2;
 }
 
 .card p {
-    font-size: 14px;
+    font-size: 16px;
     color: #666;
-    margin-top: 4px;
+    padding-top: 10px;
 }
 
-  .card-img-top {
+.card-img-top {
     height: 200px;
     width: 100%;
     object-fit: cover;
-  }
+}
   
-  .card-text {
+.card-text {
     font-size: 14px;
-  }
+}
   
-  .btn-primary {
+.btn-primary {
     background-color: #007bff;
     border: none;
     padding: 10px 20px;
     color: #fff;
-    border-radius: 5px;
     cursor: pointer;
-  }
+}
 
 .banner {
     background-color: #f0f0f0;
     height: 240px;
     position: relative;
+    border-radius: 16px;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4));
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 16px;
 }
 
 .card-body {
-    padding: 20px;
+    margin-top: 15px;
+    border-radius: 10px;
+
 }
 
 .card-footer{
@@ -101,6 +139,11 @@
     margin-top: 15px;
 }
 
+.btn-lg {
+    margin-top: 25px;
+    width: 100%;
+}
+
 h1 {
     position: absolute;
     top: 50%;
@@ -108,25 +151,19 @@ h1 {
     transform: translate(-50%, -50%);
     z-index: 1;
     font-weight: 800;
-    
+    font-size: 48px;
+    color: white;
+    background-color: #000000;
   }
   
-.banner-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0.6;
-}
+
 
 .polite-card {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
-    background: white;
-    border-radius: 8px;
+    background: linear-gradient(#d3eaff, #f7fbff);
+    border-radius: 10px;
     overflow: hidden;
     max-width: 600px;
     box-shadow: 0px 4px 4px #91919130, 0px 12px 12px #a3a3a315;
@@ -159,13 +196,17 @@ h1 {
 
 .btn-outline-danger{
     color: black;
-    height: 32px;
-    width: 64px;
+
 }
 
 .btn-outline-danger:hover{
     color: #fff;
     background-color: red;
+}
+
+.btn-outline-secondary{
+    
+    color: black;
 }
 
 .btn:hover{
@@ -181,4 +222,12 @@ h1 {
   .crispy-fill:hover {
     box-shadow: 0 4px (#537fe7);
 }
-  
+
+.moody{
+    box-shadow: 0 0 8px #e3eeff;
+  }
+
+.moody:hover {
+    box-shadow: 0 0 24px #96d1ec;
+    transition: 0.2s ease-in-out;
+}

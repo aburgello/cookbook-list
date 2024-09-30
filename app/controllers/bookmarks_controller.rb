@@ -1,5 +1,4 @@
 class BookmarksController < ApplicationController
-
   before_action :set_category
 
   def new

@@ -1,14 +1,15 @@
-<div class="card">
-  <div class="card-header">
+<div class="container p-5">
+  <div class="card-header mt-3" style="padding-left: 20px; padding-top: 20px">
     <h2>New Category</h2>
+    <%= link_to 'Back', categories_path, class: "btn btn-outline-secondary float-right", :style=>"width: 100px; margin-right: 20px; margin-bottom: 5px;"%>
   </div>
   <div class="card-body">
     <%= simple_form_for @category do |f| %>
       <%= f.input :name %>
-      <%= f.button :submit, class: "btn btn-primary" %>
+      <%= f.button :submit, class: "btn btn-primary btn btn-primary btn-lg btn-block crispy-fill" %>
     <% end %>
   </div>
   <div class="card-footer">
-    <%= link_to 'Back', categories_path, class: "btn btn-secondary" %>
+    
   </div>
 </div>

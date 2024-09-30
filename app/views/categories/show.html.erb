@@ -1,10 +1,10 @@
 <div class="container">
-  <div class="card">
+  <div class="card mt-4">
     <div class="card-header">
       <h2><%= @category.name %></h2>
     <div class="btn-div">
-      <%= link_to "Back to Categories", categories_path, class: "btn btn-secondary float-right" %> 
-      <%= link_to "Delete Category", category_path(@category), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" }, class: "text-white btn btn-danger" %></div>
+      <%= link_to "Back to Categories", categories_path, class: "btn btn-outline-secondary float-right" %> 
+      <%= link_to "Delete Category", category_path(@category), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" }, class: "btn btn-outline-danger float-right" %></div>
     </div>
     <div class="card-body">
       <div class="card-container">
