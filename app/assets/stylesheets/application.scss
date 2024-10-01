@@ -11,7 +11,7 @@
 @import "components/index";
 @import "pages/index";
 
-body{
+body {
     background-image: url("https://sb.kaleidousercontent.com/67418/1920x1280/166659692b/ella-olsson-opbjwbccaeo-unsplash.jpg");
     background-position: center;
     background-repeat:no-repeat;
@@ -20,6 +20,12 @@ body{
     background-color: rgb(236, 159, 141);
     background-attachment: fixed;
     background-position-y: 42%;;
+}
+
+a {
+    text-decoration: wavy;
+    font-size: 20px;
+    color: #c55d2d;
 }
 
 .container {
@@ -31,12 +37,6 @@ body{
     padding-bottom: 35px;
     margin-top: 40px;
     box-shadow: 0px 4px 4px #11111130, 0px 12px 12px #53535315;
-}
-
-a {
-    text-decoration: wavy;
-    font-size: 20px;
-    color: #c55d2d;
 }
 
 .card-container {
@@ -73,7 +73,6 @@ a {
 }
 
 .card-header-index {
-    
     padding-bottom: 20px;
     font-weight: bold;
     color: #333;
@@ -256,7 +255,7 @@ h1 {
     box-shadow: 0 2px (#e77153);
 }
 
-  .crispy-fill:hover {
+.crispy-fill:hover {
     box-shadow: 0 4px (#e77153);
 }
 

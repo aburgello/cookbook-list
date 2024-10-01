@@ -30,4 +30,3 @@ recipes = [
 recipes.each do |recipe|
   Recipe.create!(recipe)
 end
-
