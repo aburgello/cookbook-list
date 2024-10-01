@@ -226,7 +226,10 @@ h1 {
     font-family: "Inter";    
 }
 
-
+.btn-primary {
+--bs-btn-active-color: #491b00;
+--bs-btn-active-bg: #ffffff;
+}
 
 .btn-outline-danger {
    color: black;
