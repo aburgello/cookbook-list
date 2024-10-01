@@ -8,7 +8,7 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 Bookmark.destroy_all
-Categories.destroy_all
+Category.destroy_all
 Recipe.destroy_all
 
 recipes = [
