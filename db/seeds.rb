@@ -9,7 +9,6 @@
 #   end
 require 'json'
 
-# Clear existing records
 Bookmark.destroy_all
 Category.destroy_all
 Recipe.destroy_all
