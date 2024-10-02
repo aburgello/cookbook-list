@@ -292,6 +292,11 @@ h1 {
     margin-right: 15px;
 }
 
+@media (min-width: 1400px) {
+    .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+        max-width: 1620px;
+    }
+}
 @media only screen and (max-width: 767px) {
     h1 {
     font-size: 30px;
